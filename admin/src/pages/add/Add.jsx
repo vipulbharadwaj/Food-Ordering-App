@@ -5,7 +5,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const Add = () => {
-  const url = "http://localhost:4000";
+  const url = "https://food-ordering-backend-iklx.onrender.com";
   const category = [
     "Rolls",
     "Salad",
