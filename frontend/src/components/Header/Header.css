@@ -1,0 +1,102 @@
+.header{
+    height: 38vw;
+    background: url('/header-image2.jpg');
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    margin: 1.8rem auto;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+.header-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1.2rem;
+    max-width: 50%;
+    left: 4vw;
+    animation: fadeIn 3s;
+}
+.header-content h2{
+    font-weight: 800;
+    font-size: 2.4rem;
+    color: white;
+    & span{
+        color: red;
+        font-style: italic;
+        font-size: 2.8rem;
+    }
+}
+
+.header-content p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.header-content button {
+    color: black;
+    padding: 1rem 1.4rem;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #ffcc33); /* Updated gradient with an additional color */
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    border: none;
+    border: 2px solid transparent;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-align: center;
+}
+
+.header-content button:hover {
+    box-shadow: 0 0 24px rgba(255, 87, 51, 0.6);
+    cursor: pointer;
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #ffcc33, #feb47b, #ff7e5f); 
+}
+
+.header-content button:focus {
+    border: 2px solid tomato;
+    outline: none;
+}
+
+.header-content button:active {
+    transform: translateY(0);
+    box-shadow: 0 0 24px rgba(255, 87, 51, 0.3);
+}
+
+@media (max-width:1050px) {
+    header{
+        height: 38vw;
+    }
+    .header-content{
+        max-width: 45%;
+    }
+    
+}
+
+@media (max-width:750px) {
+    .header-content{
+        max-width: 65%;
+    }
+    .header-content p{
+        display: none;
+    }
+    .header-content h2{
+        font-size: 1rem;
+        & span{
+            color: red;
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+    }
+    .header-content button{
+        padding: 6px 8px;
+        font-size: 10px;
+    }
+    
+}

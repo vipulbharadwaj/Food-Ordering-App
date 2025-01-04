@@ -1,0 +1,61 @@
+.rest-item{
+    width: 100%;
+    margin: auto;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    animation: fadeIn 2s;
+    background-color: azure;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    color: black;
+    overflow: hidden;
+}
+
+.rest-item:hover {
+    transform: translateY(-4px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
+}
+
+.rest-item-image{
+    width: 100%;
+    border-radius: 0.6rem 0.6rem 0 0;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.rest-item-image:hover{
+    transform: scale(1.04);
+}
+.rest-item-info{
+    padding: 1rem;
+}
+.rest-item-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rest-item-name h3{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.rest-item-rating-review{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.rest-item-rating-review .no-review{
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.rest-item-desc{
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.6rem;
+}
+.rest-item-address{
+    font-size: 1rem;
+    color: rgb(50, 54, 54);
+}

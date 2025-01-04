@@ -1,0 +1,14 @@
+.food-menu{
+    margin: 0.8rem;
+}
+.food-menu h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.food-menu-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.8rem;
+    margin-top: 1.4rem;
+}

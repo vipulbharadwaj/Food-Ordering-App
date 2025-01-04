@@ -1,0 +1,11 @@
+.rest-card{
+    margin-top: 4rem;
+}
+
+.rest-card-list{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+gap: 1.8rem;
+margin-top: 1.4rem;
+
+}

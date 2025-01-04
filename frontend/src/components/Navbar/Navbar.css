@@ -1,0 +1,208 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 1.2rem;
+}
+.navbar .logo {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.navbar .logo img{
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  top: -48%;
+  left: -4.8%;
+}
+.navbar .logo .highlight{
+  font-size: 2.2rem;
+  color: rgb(238, 169, 33);
+  text-shadow: none;
+}
+
+.logo span {
+  font-style: italic;
+  color: lightcoral;
+  text-shadow: 0 0 16px lightcoral;
+}
+
+.logo:hover {
+  transform: scale(1.04);
+}
+.nav-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-menu ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  & a {
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease-in-out;
+  }
+}
+.nav-menu ul li:not(.active):hover {
+  border-bottom: 2px solid lightcoral;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.search-icon,
+.basket-icon {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.navbar button {
+  font-size: 1rem;
+  background: transparent;
+  border: 1px solid tomato;
+  cursor: pointer;
+  color: #daf1f5;
+  padding: 0.8rem 1.8rem;
+  border-radius: 3.2rem;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar button:hover {
+  background-color: lightcoral;
+}
+
+.navbar .active {
+  border-bottom: 2px solid lightcoral;
+  padding-bottom: 1px;
+}
+.basket-icon {
+  position: relative;
+}
+.basket-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+  background-color: tomato;
+  top: 21px;
+  right: -3px;
+}
+
+.navbar-profile{
+  position: relative;
+}
+.nav-profile-dropdown{
+  display: none;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.navbar-profile img{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 24px;
+  list-style: none;
+  background-color: black;
+  border-radius: 8px;
+}
+
+.nav-profile-dropdown li{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.nav-profile-dropdown li:hover{
+  color: tomato;
+}
+
+.profile-icons{
+  font-size: 20px;
+}
+
+@media (max-width: 1050px) {
+  .navbar .logo{
+   font-size: 1.8rem;
+  }
+  .navbar .logo .highlight{
+    font-size: 2rem;
+  }
+  .nav-menu ul{
+    gap: 20px;
+    & li{
+      font-size: 18px;
+    }
+  }
+  .nav-right{
+    gap: 28px;
+  }
+
+.search-icon,
+.basket-icon {
+  font-size: 20px;
+}
+
+  .nav-right button{
+    padding: 8.8px 22px;
+  }
+  
+}
+
+
+@media (max-width: 900px) {
+  .navbar .logo{
+   font-size: 1.4rem;
+   & img{
+    display: none;
+   }
+  }
+  .navbar .logo .highlight{
+    font-size: 1.8rem;
+  }
+  .nav-menu ul{
+    gap: 15px;
+    & li{
+      font-size: 16px;
+    }
+  }
+  .nav-right{
+    gap: 20px;
+  }
+
+.search-icon,
+.basket-icon {
+  font-size: 18px;
+}
+
+  .nav-right button{
+    padding: 7px 20px;
+    font-size: 16px;
+  }
+  
+}
+
+
+@media (max-width: 750px) {
+
+  .nav-menu{
+    gap: 20px;
+    font-size: 18px;
+    display: none;
+  }
+  
+}

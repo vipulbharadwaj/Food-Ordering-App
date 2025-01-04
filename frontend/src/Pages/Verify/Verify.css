@@ -1,0 +1,28 @@
+.verify{
+    min-height: 60vh;
+    display: grid;
+
+}
+.spinner{
+    width: 80px;
+    height: 80px;
+    place-self: center;
+    border: 4px solid grey;
+    border-top-color: tomato;
+    border-radius: 50%;
+    animation: rotate 1s infinite, colorChange 1s linear infinite;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    } 
+}
+@keyframes colorChange {
+    0% { border-top-color: #f08080; }   /* Light Coral */
+    25% { border-top-color: #ff6347; }  /* Tomato */
+    50% { border-top-color: #ff8c00; }  /* Dark Orange */
+    75% { border-top-color: #ff7f50; }  /* Coral */
+    100% { border-top-color: #f08080; } /* Light Coral */
+  }
+  

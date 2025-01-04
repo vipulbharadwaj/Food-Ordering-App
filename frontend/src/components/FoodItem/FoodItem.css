@@ -1,0 +1,107 @@
+.food-item {
+    width: 100%;
+    margin: auto;
+    border-radius: 0.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    animation: fadeIn 1s;
+    background-color: #b8f0ac;
+    overflow: hidden;
+}
+
+.food-item:hover {
+    transform: translateY(-4px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
+}
+
+.food-item-image {
+    width: 100%;
+    border-radius: 0.8rem 0.8rem 0 0;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.food-item-image:hover {
+    transform: scale(1.05);
+}
+
+.food-item-info {
+    padding: 1.2rem;
+}
+
+.food-item-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+
+.food-item-name h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.food-item-rating {
+    display: inline-flex;
+    gap: 0.3rem;
+}
+
+.food-item-desc {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.8rem;
+}
+
+.food-item-price {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 0.4rem 0;
+    color: #e63946;
+}
+.button-price{
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #e63946; 
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #d62828; 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    background-color: #b51717; 
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-added {
+    background-color: #28a745; 
+    color: white; 
+}
+
+.button-added:hover {
+    background-color: #218838; 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button-added:active {
+    background-color: #1e7e34; 
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

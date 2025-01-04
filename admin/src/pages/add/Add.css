@@ -1,0 +1,78 @@
+
+  .add {
+    width: 70%;
+    max-width: 400px;
+    margin-top: 2.4rem;
+    margin-left: 4rem;
+    font-size: 16px;
+  }
+  
+ .add form {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(20, 19, 19, 0.3);
+    gap: 20px;
+    padding: 20px;
+    background-color: #424242; 
+  }
+  
+
+
+  .flex-col p {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .flex-col input, .flex-col textarea, .flex-col select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #616161; 
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .flex-col input[type="file"] {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .flex-col input:focus, .flex-col textarea:focus, .flex-col select:focus {
+    border-color: #f57c00; 
+    outline: none;
+  }
+  
+  .add-category-price {
+    display: flex;
+    gap: 20px;
+  }
+
+  .add-category, .add-price{
+    width: 48%;
+  }
+  
+  .add-btn {
+    padding: 15px;
+    background-color: #f57c00; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-btn:hover {
+    background-color: #ef6c00; 
+  }
+  
+  .add-btn:active {
+    background-color: #e65100; 
+  }
+  .image-preview {
+    margin-top: 10px;
+    width: 60%;
+    max-width: 140px;
+    border-radius: 10px;
+    border: 2px solid #555;
+  }

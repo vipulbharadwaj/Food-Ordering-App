@@ -1,0 +1,19 @@
+.rest-content{
+    margin-top: 40px;
+}
+.rest-content h2{
+    font-size: 2rem;
+}
+.sort{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: flex-end;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+
+.sort .active{
+    color: grey;
+}

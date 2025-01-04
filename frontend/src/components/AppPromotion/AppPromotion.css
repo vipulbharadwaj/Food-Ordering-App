@@ -1,0 +1,82 @@
+.app-promotion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    color: black;
+    background-color: rgb(246, 227, 204);
+    padding: 4rem 2rem;
+    margin: 4rem auto;
+}
+.app-image img{
+    width: 8rem;
+    height: 12rem;
+}
+.app-content h2{
+    font-size: 2rem;
+}
+.app-content p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.app-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.app-download img{
+    margin-top: 2rem;
+    width: 12rem;
+
+}
+@media (max-width:750px) {
+    .app-promotion{
+        gap: 2.2rem;
+        padding: 2.4rem 2rem;
+        margin: 2.8rem auto;
+        border-radius: 8px;
+    }
+
+    .app-content h2{
+        font-size: 1.2rem;
+    }
+    .app-content p{
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    .app-image img{
+        width: 6rem;
+        height: 10rem;
+    }
+
+    .app-download img{
+        width: 8rem;
+    }
+    
+}
+
+@media (max-width:550px) {
+    .app-promotion{
+        gap: 2rem;
+        padding: 2rem 2rem;
+        margin: 2.8rem auto;
+        border-radius: 8px;
+    }
+
+    .app-content h2{
+        font-size: 18px
+    }
+    .app-content p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .app-image img{
+        width: 5.5rem;
+        height: 9rem;
+    }
+
+    .app-download img{
+        width: 4rem;
+    }
+    
+}
